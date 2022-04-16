@@ -1,22 +1,51 @@
 import axios, {AxiosResponse} from "axios";
-import {CountryType} from "../reducers/reducerGetCountryByRegion";
+import {CountriesType} from "../reducers/reducerGetCountry";
 
 
 const instance = axios.create({
-    baseURL:'https://restcountries.com/v3.1/'
+    baseURL: 'https://restcountries.com/v3.1/'
 
 })
 
 export const getCountry = {
-    getCountryByRegion(region:string){
-        return instance.get<RequestDataType,AxiosResponse<GetTasksResponse>>(`region/${region}`)
-    }
+    getCountryByRegion(region: string) {
+        return instance.get<RequestDataRegionType, AxiosResponse<GetCountryResponse>>(`region/${region}`)
+    },
+
+    getCountryByName(name: string) {
+        return instance.get<RequestDataNameType, AxiosResponse<GetCountryResponse>>(`name/${name}`)
+    },
+    getCountryByFullName(name: string | undefined) {
+        return instance.get(`name/${name}?fullText=true`)
+    },
+
 }
 
 
-
-type RequestDataType = {
-    region:string
+type RequestDataRegionType = {
+    region: string
 }
 
-type GetTasksResponse = CountryType[]
+type RequestDataNameType = {
+    name: string
+}
+
+type GetCountryResponse = CountriesType[]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

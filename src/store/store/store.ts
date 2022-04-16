@@ -1,9 +1,9 @@
 import {applyMiddleware, combineReducers, createStore} from 'redux';
 import thunk from 'redux-thunk';
-import {reducerGetCountryByRegion} from "../reducers/reducerGetCountryByRegion";
+import {reducerGetCountry} from "../reducers/reducerGetCountry";
 
 const rootReducer = combineReducers({
-    countries: reducerGetCountryByRegion,
+    countries: reducerGetCountry,
 
 })
 
