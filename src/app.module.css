@@ -3,6 +3,5 @@
 }
 
 .app{
-    background-color: hsl(207, 26%, 17%);
-    min-height: 100vh;
+   height: 90vh;
 }

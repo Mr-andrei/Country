@@ -1,18 +1,19 @@
 import React from 'react';
 import style from "./app.module.css"
-import {Header} from "./components/Headder/Header";
-import {Route, Routes} from 'react-router-dom';
-import {MainWrapper} from "./components/MainWrapper";
-import {AboutCountry} from "./components/AboutCountry/AboutCountry";
+import {Header} from "./components/Header/Header";
+import {MainBlock} from "./components/MainBlock/MainBlock";
+import {useSelector} from "react-redux";
+import {AppRootStateType} from "./store/store/store";
+
+import {Loader} from "./components/Hallpers/loader/Loader";
+
 
 function App() {
+    const loader = useSelector<AppRootStateType, boolean>(state => state.appData.status)
     return (
         <div className={style.app}>
             <Header/>
-            <Routes>
-                <Route path="/" element={<MainWrapper/>}/>
-                <Route path="/aboutCountry/:name" element={<AboutCountry/>}/>
-            </Routes>
+            {loader ? <Loader/> : <MainBlock/>}
         </div>
     );
 }

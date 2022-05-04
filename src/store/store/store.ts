@@ -1,10 +1,12 @@
 import {applyMiddleware, combineReducers, createStore} from 'redux';
 import thunk from 'redux-thunk';
-import {reducerGetCountry} from "../reducers/reducerGetCountry";
+import {getDataByNameReducer} from "../getDataByName/getDataByNameReducer";
+import {appReducer} from "../appReducer/appReducer";
+
 
 const rootReducer = combineReducers({
-    countries: reducerGetCountry,
-
+    userData: getDataByNameReducer,
+    appData: appReducer
 })
 
 export const store = createStore(rootReducer, applyMiddleware(thunk));

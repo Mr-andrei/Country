@@ -1,0 +1,66 @@
+
+
+.main_wrapper{
+    max-width: 300px;
+    margin: 25px 120px 0 55px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar_block{
+    width: 280px;
+    height: 280px;
+
+    margin-bottom: 30px;
+}
+
+.avatar_block img {
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    display: inline-block;
+}
+
+.names_block{
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+.login_link{
+    margin-bottom: 30px;
+    
+    font-size: 18px;
+    line-height: 22px;
+    color: #0064EB;
+    text-decoration: none;
+}
+
+
+.follows_block{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+.followers{
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+

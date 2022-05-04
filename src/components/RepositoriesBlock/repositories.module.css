@@ -1,0 +1,20 @@
+
+.wrapper_repo {
+
+}
+
+.repo_title {
+    margin-bottom: 53px;
+}
+
+.repo_block{
+    display: flex;
+    flex-direction: column;
+}
+
+.repo_link{
+    margin-bottom: 20px;
+}
+.repo_text{
+    margin-bottom: 80px;
+}
