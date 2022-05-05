@@ -28,7 +28,7 @@ export const RepoBlock = React.memo(() => {
                 {
                     userRepositories.map((m) => (
                         <div className={style.repo_block} key={m.id}>
-                            <a target="_blank"
+                            <a
                                className={style.repo_link}
                                href={m.html_url}>{m.name}</a>
                             <span className={style.repo_text}>{m.description}</span>

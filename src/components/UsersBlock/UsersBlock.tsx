@@ -21,7 +21,6 @@ export const UsersBlock = React.memo( () => {
                     {userData.name}
                 </h3>
                 <a
-                    target="_blank"
                     className={style.login_link}
                     href={userData.html_url}>
                     {userData.login}</a>
