@@ -19,8 +19,10 @@ export const getDataByNameTC = () => async (dispatch: Dispatch<ActionsType | Act
         if (e.response.data.message === "Not Found") {
             dispatch(setErrorScreen("userNotFound"))
         }
+    } finally {
+        dispatch(setLoader(false))
     }
-    dispatch(setLoader(false))
+
 }
 
 export const getRepoByNameTC = (page: number) => async (dispatch: Dispatch<ActionsType | ActionsAppReducerType>, getState: () => AppRootStateType) => {

@@ -1,7 +1,7 @@
 import {setErrorScreen, setLoader} from "./appReducerAC";
 
 const initialState: InitialStateType = {
-    status: false,
+    statusLoader: false,
     screen: 'startScreen'
 }
 
@@ -12,7 +12,7 @@ export const appReducer = (state = initialState, action: ActionsAppReducerType):
             return {...state, screen: action.textError}
         }
         case "SET_LOADER": {
-            return {...state, status: action.loader }
+            return {...state, statusLoader: action.loader }
         }
         default:
             return state
@@ -23,7 +23,7 @@ export const appReducer = (state = initialState, action: ActionsAppReducerType):
 export type ScreenType = 'userNotFound' | 'startScreen'  | "everythingGood"
 
 export type InitialStateType = {
-    status: boolean
+    statusLoader: boolean
     screen: ScreenType
 }
 

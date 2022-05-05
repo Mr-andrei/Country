@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image_block img {
+    display: block;
+
+    width: 65px;
+    height: 65px;
+    margin-bottom: 50px;
+}
+
+.image_block_repo {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 50px;
+}
+
+.image_block_repo img {
+    display: block;
+    width: 75px;
+    height: 64px;
+}
+
+.text {
+    display: inline-block;
+
+
+    color: #808080;
+    font-size: 22px;
+    line-height: 31px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

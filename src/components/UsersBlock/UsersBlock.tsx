@@ -3,9 +3,10 @@ import {AppRootStateType} from "../../store/store/store";
 import {UserDataType} from "../../services/API/getUserDataAPI";
 import style from "./userBlock.module.css"
 import {numberWelding} from "../../utils/numberWelding";
+import React from "react";
 
 
-export const UsersBlock = () => {
+export const UsersBlock = React.memo( () => {
 
     const userData = useSelector<AppRootStateType, UserDataType>(state => state.userData.userData)
 
@@ -37,4 +38,4 @@ export const UsersBlock = () => {
 
         </div>
     )
-}
+})

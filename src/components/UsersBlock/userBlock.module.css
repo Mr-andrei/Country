@@ -1,6 +1,5 @@
 
-
-.main_wrapper{
+.main_wrapper {
     max-width: 300px;
     margin: 25px 120px 0 55px;
 
@@ -8,7 +7,7 @@
     flex-direction: column;
 }
 
-.avatar_block{
+.avatar_block {
     width: 280px;
     height: 280px;
 
@@ -24,7 +23,7 @@
     display: inline-block;
 }
 
-.names_block{
+.names_block {
     display: flex;
     flex-direction: column;
 }
@@ -34,9 +33,9 @@
     margin-bottom: 12px;
 }
 
-.login_link{
+.login_link {
     margin-bottom: 30px;
-    
+
     font-size: 18px;
     line-height: 22px;
     color: #0064EB;
@@ -44,20 +43,22 @@
 }
 
 
-.follows_block{
+.follows_block {
     font-size: 16px;
     line-height: 24px;
 }
 
 
-
-.followers{
+.followers {
     margin-right: 30px;
 }
 
 
-
-
+@media (max-width: 992px) {
+    .main_wrapper {
+        margin: 25px auto 35px;
+    }
+}
 
 
 

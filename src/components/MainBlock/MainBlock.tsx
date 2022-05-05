@@ -5,11 +5,13 @@ import style from "./mainBlock.module.css"
 import {useSelector} from "react-redux";
 import {AppRootStateType} from "../../store/store/store";
 import {ScreenType} from "../../store/appReducer/appReducer";
-import {Halpers} from "../Hallpers/Hallpers";
+import {Helpers} from "../Hallpers/ScrenHallpersComponents/Helpers";
 
 
 export const MainBlock = () => {
     const screen = useSelector<AppRootStateType, ScreenType>(state => state.appData.screen)
+
+
     if (screen !== "startScreen" && screen !== "userNotFound") {
         return (
             <div className={style.container}>
@@ -18,6 +20,6 @@ export const MainBlock = () => {
             </div>
         )
     }
-    return <><Halpers/></>
+    return <><Helpers/></>
 
 }

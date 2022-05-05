@@ -1,7 +1,7 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-.app{
-   height: 90vh;
+.app {
+    min-height: 100vh;
 }

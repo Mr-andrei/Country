@@ -5,16 +5,50 @@
 
 .repo_title {
     margin-bottom: 53px;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 42px;
 }
 
 .repo_block{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .repo_link{
     margin-bottom: 20px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #0064EB;
 }
 .repo_text{
     margin-bottom: 80px;
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+@media (max-width: 992px) {
+    .wrapper_repo {
+        text-align: center;
+    }
+    .repo_block{
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .wrapper_repo {
+        padding: 0 13px;
+
+    }
+
 }
