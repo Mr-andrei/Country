@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/SearchGit/static/css/main.64acd4d4.css",
+    "main.js": "/SearchGit/static/js/main.0d7d824b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/SearchGit/static/js/787.28cb0dcd.chunk.js",
+    "static/media/searchInput.svg": "/SearchGit/static/media/searchInput.5e71efd59e1286616282837ee2f362c4.svg",
+    "index.html": "/SearchGit/index.html",
+    "main.64acd4d4.css.map": "/SearchGit/static/css/main.64acd4d4.css.map",
+    "main.0d7d824b.js.map": "/SearchGit/static/js/main.0d7d824b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/SearchGit/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64acd4d4.css",
+    "static/js/main.0d7d824b.js"
+  ]
+}
